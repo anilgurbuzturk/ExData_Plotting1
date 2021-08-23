@@ -46,10 +46,10 @@ sdata$Global_reactive_power <- as.numeric(sdata$Global_reactive_power)
 ## Making Plots
 ## plot1.png
 
+png("plot1.png", width = 480, height = 480)
+
 hist(sdata$Global_active_power, main = "Global Active Power", col = "red", 
      xlab = "Global Active Power(kilowatts)")
-
-png("plot1.png", width = 480, height = 480)
 
 dev.off()
 

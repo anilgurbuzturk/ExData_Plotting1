@@ -45,11 +45,10 @@ sdata$Global_reactive_power <- as.numeric(sdata$Global_reactive_power)
 
 ## Making Plots
 ## plot2.png
+png("plot2.png", width = 480, height = 480)
 
 with(sdata, plot(DateTime, Global_active_power, type = "l", xlab = "Day", 
                  ylab = "Global Active Power (kilowatts)"))
-
-png("plot2.png", width = 480, height = 480)
 
 dev.off()
 
